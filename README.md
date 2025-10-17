@@ -1,1 +1,1 @@
-Distributed Database management System Lab
+Distributed Database Management System Lab Contents
