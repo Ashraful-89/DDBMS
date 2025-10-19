@@ -16,10 +16,18 @@ Q7 is missing in the slide, Q1 & Q2 for table creation and data insertion.
 docker container start -i myHadoop
 docker container stop
 
+"in another terminal":
+
+#for linux command:
 docker exec -it myHadoop mkdir -p /test  (new-1: for linux)
+docker exec -it myHadoop mkdir -p /test
+docker cp /home/ashraful/Downloads/students.csv myHadoop:/test/
+docker cp /home/ashraful/Downloads/course.csv myHadoop:/test/
+docker cp /home/ashraful/Downloads/student_results.csv myHadoop:/test/
 
 
 
+#for windows command:
 
 "in another terminal"
 docker cp C:/Users/bakht/Downloads/student_results.csv myHadoop:\test
@@ -246,5 +254,6 @@ DROP TABLE education_db.studens;
 DROP DATABASE education_db;
 SHOW TABLES IN education_db;
 hdfs dfs -rm -r /TeacherDetail/Result/exam_year=__HIVE_DEFAULT_PARTITION__
+
 
 
